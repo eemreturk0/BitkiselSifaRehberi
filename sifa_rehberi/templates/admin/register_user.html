@@ -1,0 +1,33 @@
+{% extends "admin/base_mod.html" %}
+
+{% block head_css %}
+    {{ super() }}
+    <style>
+        .field-required::after {
+            color: red;
+            content: " *";
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    {% from "_formhelpers.html" import render_field_bs %}
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2">
+                <h3>{{ _("User Registry Form") }}</h3>
+                <form method="post">
+                    <ul>
+                        {{ form.csrf_token }}
+                        {{ render_field_bs(form.name) }}
+                        {{ render_field_bs(form.surname) }}
+                        {{ render_field_bs(form.email) }}
+                        {{ render_field_bs(form.password) }}
+                        {{ render_field_bs(form.confirm) }}
+                    </ul>
+                    <button class="btn btn-primary btn-lg" type="submit">{{ _("Register") }}</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

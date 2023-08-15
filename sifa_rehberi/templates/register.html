@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BŞR REGİSTER</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+   <div class="wrapper">
+       <div class="logo">
+            <img src="../static/b.png" alt="">
+        </div>
+       <div class="text-center mt-4 name">
+            Bitkisel Şifa Rehberi
+        </div>
+        <form action="/register" method="POST" class="p-3 mt-3">
+            <div class="form-field  d-flex align-items-center">
+                <span class="far fa-user"></span>
+                <input type="text" name="email" id="email" placeholder="kullanıcı adı" required>
+            </div>
+            <div class="form-field  d-flex align-items-center">
+                <span class="fas fa-key"></span>
+                <input type="password" name="password" id="password" placeholder="şifre" required>
+            </div>
+            <button type="submit" class="btn mt-3">Kayıt ol</button>
+        </form>
+    </div>
+</body>
+</html>

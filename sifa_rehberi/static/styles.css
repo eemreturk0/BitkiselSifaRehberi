@@ -1,0 +1,20 @@
+body{
+    font-family: sans-serif;
+}
+
+.head{
+    background-color: #F3F2F3;
+    height: 50px;
+}
+.sign{
+    margin-left: 1400px;
+    top: 10px;
+    color: #8E8E8E;
+}
+.sign a{
+    color: #8E8E8E;
+}
+.logo{
+    margin-bottom: 100px;
+    margin-left: 800px;
+}
